@@ -53,3 +53,25 @@ Suppose you bought 100 shares at a price of 500 NPR each and sold them at 600 NP
 
 - Ensure all inputs are accurate to get precise calculations.
 - This tool is intended for educational and informational purposes only. Always consult a financial advisor for professional advice.
+
+
+### ** Running the Application**
+
+1. **Install Dependencies**:
+   ```bash
+   pip install fastapi uvicorn
+   ```
+
+2. **Run the Backend**:
+   ```bash
+   uvicorn app:app --host 0.0.0.0 --port 8000
+   ```
+
+3. **Serve the Frontend**:
+   Use a simple HTTP server to serve the `index.html` file:
+   ```bash
+   python -m http.server 8081
+   ```
+
+4. **Access the Application**:
+   Open your browser and navigate to `http://localhost:8000`.
